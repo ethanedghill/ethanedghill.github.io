@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <center>
+            <script>
+                function check() {
+                    var correctAnswer = "1012"
+                    var inputValue = document.getElementById("Name").value;
+
+                    if(inputValue !== correctAnswer) {
+                        return false;
+                    };
+                }
+            </script>
+            <img src="rubberducky.gif">
+            <h1 class="coral">SHOE SIZE?</h1>
+            <form onsubmit="return check()" method="POST" action="leaderboardtest.html">
+
+            <input type="text" required minlength="4" maxlength="4" id="Name">
+            </form>
+        </center>
+    </body>
+</html>
